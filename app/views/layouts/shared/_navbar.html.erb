@@ -6,6 +6,9 @@
         <li class="nav-item">
           <%= link_to "Home", pages_home_path, class: "nav-link" %>
         </li>
+        <li class="nav-item">
+          <%= link_to "Car parts", car_parts_path, class: "nav-link" %>
+        </li>
         <% if admin_signed_in? %>
           <li class="nav-item">
             <%= link_to "Manage Customers", manage_customers_path, class: "nav-link" %>

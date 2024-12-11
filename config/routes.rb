@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   resources :manage_sellers
   resources :manage_customers
+  resources :car_parts
 
   get "pages/home"
 
