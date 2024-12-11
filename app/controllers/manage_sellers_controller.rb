@@ -1,4 +1,6 @@
 class ManageSellersController < ApplicationController
+  before_action :authenticate_admin!
+
   def index
     @sellers = Seller.all
   end
