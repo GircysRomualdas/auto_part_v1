@@ -14,6 +14,6 @@ class ManageSellersController < ApplicationController
       flash[:alert] = "Failed to delete the Seller"
     end
 
-    redirect_to manage_sellers_path
+    redirect_to request.referrer || manage_sellers_path
   end
 end

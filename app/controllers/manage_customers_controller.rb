@@ -14,6 +14,6 @@ class ManageCustomersController < ApplicationController
       flash[:alert] = "Failed to delete the customer"
     end
 
-    redirect_to manage_customers_path
+    redirect_to request.referrer || manage_customers_path
   end
 end
